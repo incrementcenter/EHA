@@ -5,9 +5,109 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
+<header class="head">
+    <nav class="header-container">
+        <div class="top-container">
+            <div class="logo">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="codepen">
+                        <path d="M502.285 159.704l-234-156c-7.987-4.915-16.511-4.96-24.571 0l-234 156C3.714 163.703 0 170.847 0 177.989v155.999c0 7.143 3.714 14.286 9.715 18.286l234 156.022c7.987 4.915 16.511 4.96 24.571 0l234-156.022c6-3.999 9.715-11.143 9.715-18.286V177.989c-.001-7.142-3.715-14.286-9.716-18.285zM278 63.131l172.286 114.858-76.857 51.429L278 165.703V63.131zm-44 0v102.572l-95.429 63.715-76.857-51.429L234 63.131zM44 219.132l55.143 36.857L44 292.846v-73.714zm190 229.715L61.714 333.989l76.857-51.429L234 346.275v102.572zm22-140.858l-77.715-52 77.715-52 77.715 52-77.715 52zm22 140.858V346.275l95.429-63.715 76.857 51.429L278 448.847zm190-156.001l-55.143-36.857L468 219.132v73.714z"
+                              class=""></path>
+                    </svg>
+                </a>
+            </div>
+            <div class="logo-texts">
+                <p class="login_title">
+                    <a href="https://codepen.io/negus_say/pen/ZZqVJP">Login/Signup Form With Slider</a>
+                </p>
+                <p class="login_title_down">A PEN BY
+                    <a href="https://codepen.io/negus_say">So ...phineas</a>
+                </p>
+            </div>
+        </div>
+        <div class="navigations">
+            <a href="#">
+                <button class="heart-button">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         class="heart" viewBox="0 0 512 512" width="20px" height="20px" fill="white">
+                        <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path>
+                    </svg>
+                </button>
+            </a>
+            <a href="#">
+                <button class="top-signup">Sign Up</button>
+            </a>
+            <a href="#">
+                <button class="top-login">Log In</button>
+            </a>
+        </div>
+    </nav>
+</header>
+<main class="main">
+    <div class="main-container">
+        <div class="img_slider">
 
+            <div class="img-container">
+                <div class="images">
+                    <img src="Image/photo_3.jpeg" alt="No internet connection">
+                    <div class="bl"></div>
+                    <h1>The hardest part of starting up is starting out for you.</h1>
+                </div>
+                <div class="images">
+                    <img src="Image/photo_2.jpg" alt="No internet connection">
+                    <div class="bl"></div>
+                    <h1>We understand you and your business, We have the right solutions for you.</h1>
+                </div>
+                <div class="images">
+                    <img src="Image/photo_1.jpeg" alt="No internet connection">
+                    <div class="bl"></div>
+                    <h1>Join Us Now</h1>
+                </div>
+            </div>
+            <div class="dots">
+                <div class="dot" ></div>
+            </div>
+        </div>
+        <div class="inputs-container">
+            <div class="main-signs">
+                <button class="b">
+                    Sigh Up
+                </button>
+                <button class="c">
+                    Sigh In
+                </button>
+            </div>
+            <div>
+                <label class="main-title">FULL NAME</label>
+                <input type="text" placeholder="Your full name" name="fullname">
+            </div>
+            <div class="mail-input">
+                <span class="main-title">E-MAIL</span>
+                <input type="text" placeholder="Your e-mail" name="email">
+            </div>
+            <div class="password-input">
+                <span class="main-title">PASSWORD</span>
+                <input type="text" placeholder="Your password" name="password">
+            </div>
+            <div class="terms">
+                <input type="checkbox" class="chekbox">
+                <h3>I agree all statments in</h3>
+                <a href="#" class="lined-link">terms of service</a>
+            </div>
+            <button class="last-button">
+                Sigh Up
+            </button>
+            <a href="#" class="latest-link">I'm already member</a>
+        </div>
+    </div>
+
+
+</main>
+<script src="script.js"></script>
 </body>
 </html>

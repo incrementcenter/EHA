@@ -1,0 +1,360 @@
+/****GENERAL****/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+button {
+    margin: 10px;
+    cursor: pointer;
+}
+
+body {
+    background: black;
+}
+
+input {
+    display: block;
+}
+
+/* Header Start */
+
+.head {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background-color: black;
+}
+
+.header-container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-container {
+    display: flex;
+    width: 25%;
+    line-height: 25px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+svg.codepen {
+    width: 32px;
+    fill: white;
+}
+
+.login_title {
+    font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif, serif;
+    font-size: 18px;
+}
+
+.login_title_down {
+    color: #9ca0b1;
+    font-size: 11px;
+    font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif, serif;
+}
+
+.login_title_down a {
+    color: white;
+    font-size: 15px;
+    font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif, serif;
+}
+
+.navigations {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 25%;
+}
+
+.heart-button {
+    border: 3px solid #444857;
+    border-radius: 10px;
+    width: 40px;
+    height: 60px;
+    background-color: transparent;
+}
+
+.heart-button:hover {
+    background-color: #5a5f73;
+}
+
+.top-signup {
+    border: 3px solid transparent;
+    border-radius: 10px;
+    color: black;
+    background-color: #47cf73;
+    width: 100px;
+    height: 40px;
+    font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif, serif;
+    font-size: 20px;
+}
+
+.top-login {
+    border: 3px solid transparent;
+    border-radius: 10px;
+    color: white;
+    background-color: #444857;
+    width: 100px;
+    height: 40px;
+    font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif, serif;
+    font-size: 20px;
+}
+
+.top-signup:hover {
+    background-color: #2fb45a;
+}
+
+.top-login:hover {
+    background-color: #5a5f73;
+}
+
+/* Header End */
+
+/* Main All Start */
+
+.main {
+    position: relative;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 90%;
+    margin-bottom: 100px;
+}
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 700px;
+}
+
+/* Main All End */
+
+/* Images Start */
+
+.img-container {
+    display: flex;
+    position: relative;
+    height: 100%;
+}
+
+.inputs-container {
+    width: 50%;
+    height: 100%;
+}
+
+.img_slider {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.bl {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(47, 63, 85, 0.53);
+}
+
+.images {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.images img {
+    height: 100%;
+}
+
+.images h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    text-align: center;
+    color: white;
+    z-index: 10;
+    font-size: 45px;
+}
+
+.dots {
+    position: absolute;
+    z-index: 3;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%,0);
+    display: flex;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    border: 1px solid transparent;
+    border-radius: 100%;
+    background-color: #8dffea;
+    margin: 0 5px;
+}
+
+/* Images End */
+/*!*===+++++++++=Main==++++++++++++++====*!*/
+/*.main-container {*/
+/*position: relative;*/
+/*width:90%;*/
+/*background: #374a62;*/
+/*border-radius: 10px;*/
+/*display: flex;*/
+/*justify-content: space-between;*/
+/*margin:50px auto;*/
+
+/*}*/
+/*.img-container {*/
+/*display: flex;*/
+/*justify-content: space-between;*/
+/*width: 50%;*/
+/*overflow: hidden;*/
+
+/*}*/
+/*.child-img {*/
+/*width: 100%;*/
+/*height: 100%;*/
+
+/*}*/
+/*.img-container h1{*/
+/*position: absolute;*/
+/*top: 30%;*/
+/*left: 10%;*/
+/*color: white;*/
+/*font-size: 2em;*/
+/*width: 30%;*/
+/*}*/
+
+/*.main-img1 {*/
+/*width: 100%;*/
+/*height: 100%;*/
+/*border-radius: 10px 0 0 10px;*/
+/*}*/
+/*.img-container::before {*/
+/*content: "";*/
+/*position: absolute;*/
+/*background: rgba(53, 73, 98, 0.47);*/
+/*width: 48%;*/
+/*height: 100%;*/
+/*border-radius: 10px 0 0 10px;*/
+/*}*/
+/*.dot-div {*/
+/*position: absolute;*/
+/*text-align:center;*/
+/*bottom: 0;*/
+/*display: block;*/
+/*width: 50%;*/
+/*}*/
+/*.dots {*/
+/*display: inline-block;*/
+/*list-style: none;*/
+/*margin: 5px;*/
+/*width: 10px;*/
+/*height: 10px;*/
+/*background:#8dffea;*/
+/*border-radius: 100%;*/
+/*cursor: pointer;*/
+
+/*}*/
+/*.inputs-container {*/
+/*width: 50%;*/
+/*padding: 10px 30px;*/
+/*}*/
+/*input {*/
+/*width: 100%;*/
+/*background: none;*/
+/*border: none;*/
+/*border-bottom: 1px solid rgba(255, 255, 255, 0.4);*/
+/*padding-top: 15px;*/
+/*padding-bottom: 15px;*/
+
+/*}*/
+
+/*.main-signs {*/
+/*text-align: end;*/
+/*box-sizing: border-box;*/
+
+/*}*/
+
+/*.b {*/
+/*padding: 10px;*/
+/*border: none;*/
+/*border-radius: 20px 0 0 20px;*/
+/*background: #68dac7;*/
+/*color: white;*/
+/*cursor: pointer;*/
+/*font-size: 15px;*/
+/*}*/
+/*.c {*/
+/*padding: 10px;*/
+/*border: none;*/
+/*border-radius: 0 20px 20px 0;*/
+/*background: #6c6e71;*/
+/*color: white;*/
+/*cursor: pointer;*/
+/*font-size: 15px;*/
+/*}*/
+/*.terms {*/
+/*display: flex;*/
+/*justify-content: space-between;*/
+/*color: #9E9E9E;*/
+/*margin-bottom: 60px;*/
+/*width:50%;*/
+/*margin-top: 40px;*/
+
+/*}*/
+/*.last-button {*/
+/*padding: 10px 20px;*/
+/*border: none;*/
+/*border-radius: 20px;*/
+/*background: #68dac7;*/
+/*color: white;*/
+/*cursor: pointer;*/
+/*font-size: 20px;*/
+/*margin-bottom: 30px;*/
+
+/*}*/
+
+/*.latest-link {*/
+/*padding-bottom: 5px;*/
+/*font-size: 20px;*/
+/*border-bottom: 1px solid #68dac7 ;*/
+/*}*/
+/*input::placeholder {*/
+/*margin-bottom: 45px;*/
+/*color: rgba(255, 255, 255, 0.6);*/
+/*font-size: 15px;*/
+/*}*/
+/*.main-title {*/
+/*color: white;*/
+
+/*}*/
+/*.mail-input {*/
+/*margin-top: 40px;*/
+/*}*/
+
+/*.password-input {*/
+/*margin-top: 40px;*/
+/*}*/
+/*.chekbox {*/
+/*width: 4%;*/
+/*}*/
