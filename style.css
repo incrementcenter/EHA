@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+button {
+    cursor: pointer;
+}
+body {
+    background: black;
+}
+
+
+.main-container {
+    position: relative;
+    width:90%;
+    background: #374a62;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin:50px auto;
+
+}
+.img-container {
+    position: relative;
+    display: flex;
+    width: 50%;
+    overflow: hidden;
+
+}
+.dot-div {
+    position: absolute;
+    text-align:center;
+    bottom: 0;
+    display: block;
+    width: 100%;
+}
+.dots {
+    display: inline-block;
+    list-style: none;
+    margin: 5px;
+    width: 10px;
+    height: 10px;
+    background:#8dffea;
+    border-radius: 100%;
+    cursor: pointer;
+
+}
+
+.img-container h1{
+    font-family: 'Raleway', sans-serif;
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    width: 100%;
+    font-weight: 100;
+
+}
+.child-imgs {
+    width: 713px;
+    flex-shrink: 0;
+}
+.photos{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+.img-container::before {
+    content: "";
+    position: absolute;
+    background: rgba(53, 73, 98, 0.47);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+
+
+.form-container {
+    width: 50%;
+    padding: 15px 30px;
+}
+
+.top-buttons {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 0;
+    padding-top: 15px;
+
+
+}
+
+.top-signup{
+    font-family: 'Raleway', sans-serif;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    background: #68dac7;
+    color: white;
+    font-size: 15px;
+}
+.top-signin {
+    font-family: 'Raleway', sans-serif;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    background: #4c5c72;
+    color: white;
+    font-size: 15px;
+}
+
+.inputs-container {
+    padding-top: 50px;
+}
+.inputs-title {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+
+}
+input {
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 06);
+}
+
+.mail-input {
+    margin-top: 40px;
+}
+
+.password-input {
+    margin-top: 40px;
+}
+
+
+.terms {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    color: #9E9E9E;
+    margin-bottom: 60px;
+    margin-top: 40px;
+    width: 100%;
+
+}
+.chekbox {
+width: 3%;
+}
+.terms h4 {
+    margin: 0 5px 0 4px;
+}
+.lined-link {
+    width: 25%;
+    border-bottom: 1px solid #63d5c4;;
+}
+
+.last-signup{
+    width: 25%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.55);
+    background: #5bcdbe;
+
+}
+
+.latest-link {
+    margin-left: 15px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    border-bottom: 1px solid #68dac7 ;
+}
