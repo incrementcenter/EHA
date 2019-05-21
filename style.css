@@ -151,6 +151,7 @@ input::placeholder {
 
 
 .terms {
+    position: relative;
     font-family: 'Raleway', sans-serif;
     display: flex;
     color: #9E9E9E;
@@ -189,4 +190,73 @@ width: 3%;
     padding-bottom: 5px;
     font-size: 20px;
     border-bottom: 1px solid #68dac7 ;
+}
+
+.mainup{
+    position: relative;
+}
+
+.notcheck {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: -45px;
+    background-color: #ff0000b5;
+    padding: 5px;
+    color: white;
+    border-radius: 10px;
+    font-size: 13px;transition: display 5s linear;
+}
+
+.notcheck::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #ff0000;
+    border-top: none;
+    border-right: none;
+    left: -1.5px;
+    bottom: -15px;
+    transform: rotate(-45deg);
+}
+
+.notcheck::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 25px;
+    height: 2px;
+    bottom: -5px;
+    left: -5.5px;
+    transform: rotate(-90deg);
+    background-image: linear-gradient(to right, red 50% , #ff000000);
+}
+
+.not {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #ff0000b5;
+    padding: 5px;
+    color: white;
+    border-radius: 10px;
+}
+
+.not::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    z-index: -1;
+    bottom: -10px;
+    left: 50%;
+    transform: rotate(45deg);
+    /* transform: translateX(-50%); */
+    border: 1px solid #ff0000b5;
+    border-top: none;
+    border-left: none;
+    /* background-color: #ff0000b5; */
 }
